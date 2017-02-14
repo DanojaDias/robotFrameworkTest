@@ -1,0 +1,11 @@
+*** Settings ***
+Library           Selenium2Library
+
+*** Variables ***
+${browser}  firefox
+${google_url}  http://www.google.lk/
+
+*** Test Cases ***
+Open Browser To Google Page
+    Open Browser  ${google_url}  ${browser}
+    Title Should Be  Google
